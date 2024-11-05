@@ -1,0 +1,553 @@
+/* google font (Lilita one, Oswald, Roboto) */
+
+@import url("https://fonts.googleapis.com/css2?family=Lilita+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+*,*::before,*::after{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    outline: none;
+}
+
+body,html{
+    color: black;
+    font-size: 10px;
+    font-weight: 400;
+    scroll-behavior: smooth;
+    line-height: 1.5;
+}
+h1{
+    font-size: 9rem;
+    line-height: 1.4;
+    font-weight: 600;
+    color: black;
+}
+h2{
+    color: black;
+    font-size: 3.7rem;
+    font-weight: 600;
+    display: inline-block;
+    text-transform: capitalize;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+}
+h3{
+    color: white;
+    font-size: 3.1rem;
+    font-weight: 700;
+    line-height: 1.2; 
+}
+h4{
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1;
+    color: black;
+}
+h5{
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1;
+    color: black;
+}
+p{
+    font-size: 1.6rem;
+    line-height: 1.6;
+    margin-top: 1rem;
+    color: black;
+}
+
+embed,iframe,img,object{
+    max-width: 100%;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a,a:active,a:focus,a:hover,button{
+    text-decoration: none;
+    outline: 0;
+}
+
+li a{
+   color: white; 
+}
+
+a:hover,button:hover{
+    -webkit-animation-: all 0.3s ease-in; 
+    -o-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+}
+
+::-webkit-scrollbar{
+    width: 1rem;
+}
+
+::-webkit-scrollbar-track{
+    background: whitesmoke;
+}
+
+::-webkit-scrollbar-thumb{
+    background: green;
+    border-radius: 2px;
+}
+
+.main-btn{
+    position: relative;
+    color: white;
+    background: linear-gradient(to right,green, rgb(70, 203, 70));  
+    z-index: 1;
+    overflow: hidden;
+    border: 2px solid white;
+    border-radius: 3.5rem;
+    text-transform: uppercase;
+    padding: 1rem 3.5rem;
+    font-weight: 600;
+    font-size: 1.8rem;
+    margin-top: 1.5rem;
+    letter-spacing: 0.2rem;
+}
+.main-btn:hover{
+    background: white;
+    color: green;
+    border: 0.2rem solid green;
+}
+
+section{
+    padding: 5rem 0;
+}
+.section-title{
+    font-size: 4rem;
+    font-weight: 600;
+    color: black;
+    text-transform: capitalize;
+    margin-bottom: 2rem;
+}
+.section-subtitle{
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: black;
+    max-width: 40%;
+    margin: auto;
+    margin-bottom: 1.5rem;
+}
+.about .banner_section,
+.product .banner_section,
+.gallery .banner_section,
+.contact .banner_section,
+.error .banner_section
+    {
+        background: url('../images/banner-slide/top-banner.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        padding-top: 17rem;
+        padding-bottom: 10rem;
+        min-height: auto;
+}
+
+
+/* 01 navbar css */
+.header{
+    position: absolute;
+    width: 100%;
+    top: 2rem;
+    left: 0;
+    z-index: 2;
+}
+.header .navbar{
+     background: url('../images/header-bg.png');
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: contain;
+     padding: 2rem 5rem;
+}
+.header .navbar-brand{
+    width: 7.5rem;
+    margin-top: -0.1rem;
+}
+.header .navbar-nav .nav-link{
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    font-weight: 600;
+    padding: 0.5rem 2rem;
+    margin: 0 0.2rem;
+}
+.header .navbar-nav .nav-link:hover,
+.header .navbar-nav .nav-link.active{
+    color: green;
+}
+.header .navbar-toggler{
+    color: white;
+    font-size: 2rem;
+    height: 2.7rem;
+    padding: 0;
+}
+.header .navbar-toggler:focus{
+    outline: none;
+    box-shadow: none;
+}
+.header .header_right span{
+    color: green;
+    display: block;
+    font-weight: 700;
+    font-size: 1.7rem;
+    margin-right: 1rem;
+}
+.header .header_right .phone_no{
+    color: white;
+    font-size: 1.6rem;
+}
+.header-scrolled{
+    position: fixed;
+    top: -0.4rem;
+    left: 0;
+    right: 0;
+    width: 100%;
+    max-width: 1320px;
+    margin: auto;
+    z-index: 999;
+    transition: all 0.3s ease-in-out;
+}
+
+
+    /* Banner Section  */
+    .banner_section{
+        background: url('../images/banner-slide/Banner-1.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        min-height: 90vh;
+    }
+    .banner_section .carousel-item{
+        padding: 3rem;
+        height: 90vh;
+    }
+    .banner_section .carousel-caption{
+        top: 30%;
+        bottom: 0;
+        left: 3%;
+        right: 0;
+        text-align: left;
+        width: 100%;
+    }
+    .banner_section .carousel-caption h3{
+        padding: 0.5rem 1.5rem;
+        background-color: rgb(11, 32, 11);
+        display: inline;
+    }
+    .banner_section .carousel-caption p{
+        max-width: 40rem;
+        margin-bottom: 2rem;
+    }
+
+
+    /* 03 Feature css  */
+.feature_section .features-box{
+    background-color: transparent;
+    border: 0.15rem  solid rgb(160, 232, 232);
+    padding: 8rem 0;
+    transition: all 0.3s;
+}
+.feature_section .features-icon-border{
+    background-color: transparent;
+    border-radius: 50%;
+    border: 0.2rem solid rgb(160, 232, 232);
+    padding: 1.3rem;
+    display: inline-block;
+}
+.feature_section .features-box .features-icon{
+    height: 6.5rem;
+    width: 6.5rem;
+    background-color: rgb(160, 232, 232);
+    margin: auto;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.feature_section .features-box .features-icon img{
+    width: 3.7rem;
+}
+.feature_section .features-box h3{
+    margin-top: 1.5rem;
+    color: black;
+}
+.feature_section .features-box:hover{
+    background-color: rgb(23, 22, 22);
+    border-color: rgb(23, 22, 22);
+}
+.feature_section .features-box:hover h3{
+    color: white;
+}
+.feature_section .features-box:hover .features-icon-border{
+    border-color: green;
+}
+
+
+    /* 04 About Section  */
+    .landing_about_section{
+        background: url("../images/about/about-banner.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        padding: 9rem 0;
+    }
+    .landing_about_section p{
+         color: rgb(20, 19, 19);
+         margin-bottom: 2rem;
+    }
+
+
+    /* 05 Product Card Design */
+.landing_product_section .product-card{
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    border: 2px solid slategray;
+    padding: 2rem 1rem;
+    transition: all 0.3s;
+}
+.landing_product_section .product-card .product-img{
+    margin-bottom: 7rem;
+    text-align: center;
+}
+.landing_product_section .product-card h3{
+    color: rgb(23, 22, 22);
+}
+.landing_product_section .product-card span{
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: green;
+    margin-right: 0.5rem;
+    text-decoration: 1px underline rgb(1, 79, 1);
+    transition: all 0.3s;
+}
+.landing_product_section .product-card .product-detail{
+    position: absolute;
+    bottom: -17rem;
+    right: 0;
+    left: 0;
+    text-align: center;
+    padding: 5rem 1rem;
+    background-color: rgb(25, 24, 24);
+    transition: all 0.5s ease;
+}
+.landing_product_section .product-card:hover .product-detail{
+    bottom: 0;
+}
+
+
+/* Testimonial_Section  */
+.testimonial_section{
+    background-color: rgb(219, 215, 198);
+    bottom: 8rem;
+}
+.testimonial_section .carousel-indicators{
+    bottom: -6rem;
+}
+.testimonial_section .carousel-indicators button{
+    background-color: rgb(20, 19, 19);
+    width: 12px;
+    height: 1.2rem;
+    border-radius: 50%;
+}
+.testimonial_section .card{
+    background: url('../images/testimonial/testimonial-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: right;
+    padding: 5rem 5rem 5rem 0;
+    border-radius: 0 .5rem .5rem 0;
+    border: 0.1rem solid transparent;
+}
+.testimonial_section .profile-box{
+    padding: 1.875rem;
+    background-color: rgb(19, 18, 18); 
+    border-radius: .5rem 0 0 .5rem;
+}
+.testimonial_section .profile-box img{
+    border-radius: .625rem 3.125rem;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.testimonial_section .desc-box{
+    padding-left: 2.5rem;
+} 
+
+
+    /* Gallery Section */
+    .gallery_section img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+
+    /* Footer Section */
+    .footer_wrapper{
+        background: url("../images/footer-bg/footer_bg.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top center;
+        padding-top: 15rem;
+        padding-bottom: 0rem;
+    }
+    .footer_wrapper h5{
+        color: white;
+        font-size: 2.5rem;
+        margin-bottom: 1.25rem;
+    }
+    .footer_wrapper ul li{
+        margin-bottom: 0.5rem;
+        list-style: none;
+    }
+    .footer_wrapper .company_details{
+        font-size: 1.4rem;
+    }
+    .footer_wrapper .contact-info li a{
+        color: grey;
+        font-size: 1.6rem;
+    }
+    .footer_wrapper .link-widget li a,.footer_wrapper p{
+        color: grey;
+        font-size: 1.6rem;
+        padding-left: 1.6rem;
+        position: relative;
+        -webkit-transition: all 0.3s ease-out 0s;
+        transition: all 0.3s ease-out 0s;
+    }
+    .footer_wrapper .link-widget li a:before{
+        content: '\f105';
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        position: absolute;
+        left: 3px;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+    .footer_wrapper .link-widget li a:hover{
+        margin-left: .625rem;
+        color: green;
+    }
+    .footer_wrapper .social-network a{
+        width: 35px;
+        height: 3.5rem;
+        line-height: 3.2rem;
+        margin: .5rem;
+        display: inline-block;
+        border: 0.125rem solid grey;
+        color: gray;
+        text-align: center;
+        font-size: 1.2rem;
+        border-radius: 100%;
+        -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+        transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+    }
+    .footer_wrapper .social-network a:hover{
+        background-color: green;
+        border-color: green;
+        color: white;
+        box-shadow: 0 0.625rem .9375rem 0 rgb(0 0 0 / 10%);
+        transform: translateY(-0.1875);
+    }
+    .footer_wrapper .form-control{
+        font-size: 2rem;
+        color: white;
+    }
+    .footer_wrapper .form-control:focus{
+        outline: none;
+        box-shadow: none;
+        border-color: green;
+    }
+
+    .copyright-section{
+        background-color: green;
+        text-align: center;
+        margin-top: 9px;
+    }
+    .copyright-section p{
+        margin-top: 0;
+        padding: 3rem 0;
+        line-height: 0;
+    }
+    .copyright-section a{
+        color: rgb(19, 18, 18);
+        font-weight: 600;
+    }
+
+
+/* ===================================== */
+.about .banner_section .about-details p{
+    color: rgb(23, 22, 22);
+}
+
+/* ===================================== */
+/* Product = page css */
+.product .product_section .product-details p{
+    margin-bottom: 15px;
+}
+
+
+/* ===================================== */
+/* Contact = page css */
+.contact .contact-form{
+    background-color: rgb(54, 113, 75);
+    padding: 5rem;
+    box-shadow: 0 0 2rem 1.5rem rgb(0 0 0 / 4%);
+}
+.contact .contact-form .form-control:focus{
+    outline: none;
+    box-shadow: none;
+}
+.contact .contact-form .form-control::placeholder{
+    color: rgb(45, 50, 48);
+}
+.contact .contact-form .form-control{
+    padding: 1rem 1.5rem;
+    border: 1px solid green;
+    color: aquamarine;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+.contact .contact-form textarea{
+    min-height: 15rem;
+    color: rgb(45, 50, 48);
+}
+
+.contact .contact-form .info-box li{
+    position: relative;
+    padding-left: 7rem;
+    padding-bottom: 3.5rem;
+    margin-bottom: 2.9rem;
+}
+.contact .contact-form .info-box li i{
+    position: absolute;
+    left: 0;
+    top: 1.5rem;
+    font-size: 4.5rem;
+    line-height: 4.5rem;
+    color: white;
+}
+.contact .contact-form .info-box li p{
+    color: white;
+}
+.contact .contact-form .info-box li a{
+    color: rgb(21, 20, 20);
+    font-size: 2.5rem;
+    font-weight: 400;
+    margin-bottom: 0;
+}
